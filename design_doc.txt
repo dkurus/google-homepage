@@ -1,0 +1,11 @@
+google home page
+
+
+header (flexbox) with the buttons associated
+
+main -> will have  google logo
+        search bar with two buttons
+        two buttons under neath
+        small text underneath
+main
+footer -> more buttons 
