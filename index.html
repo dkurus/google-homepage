@@ -5,11 +5,16 @@
         <link rel="icon" href="5847f9cbcef1014c0b5e48c8.png.crdownload"
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
-     <style>      
+     <style>    
+
+        html {
+           height: 100%
+        }
        
          body {
             background-color: rgb(248, 219, 219);
             font-family: "material-icons";
+            min-height: 100%;
         }    
          #logo {
         max-width: 275px;
@@ -17,18 +22,21 @@
         margin-left: auto;
         margin-right: auto;    
          }
-       #form {
+       form {
+       
            height: 50px;
            border-radius: 0;
-           max-width: 600px;
+           max-width: 100%;
            margin-left: auto;
            margin-right: auto;
            margin-top: 30px;
        }     
        input {
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
         height: 50px;
-        width: 100%;
-        border: 1px;
+        border: 1px solid;
         background-image: url(2x/baseline_search_black_24dp.png);
         background-size: 35px;
         background-position-y: center;
@@ -38,12 +46,18 @@
         font-size:large; 
         border-radius: 25px; 
         outline: none; 
-        box-shadow: 0 0 0 1px grey; 
+        transition: box-shadow .4s;
+        width: 650px;
+        
+       
+        
+
+        
        }  
 
        input:hover
        {
-        box-shadow: 0 0 5px rgba(33,33,33,.2);
+        box-shadow: 0 0 30px rgba(33,33,33,.2);
        } 
        
        #search-lucky {
@@ -52,46 +66,64 @@
            margin-right: auto;
            margin-top: 20px;      
        }
-       #search {
+       button {
         font-size: large;
-        display: inline-block;
-        margin-right: 5px;
-        padding: 7px;
+        margin-right: 10px;
+        padding: 8px;
+        font-family: material-icons;
+        color:rgba(38, 36, 36, 0.693)
        }
-       #lucky {
-           font-size: large;
-           display: inline-block; 
-           margin-left: 5px;
-           padding: 7px;
-
+       button:hover {
+           color:rgba(0, 0, 0, 0.857);
        }
 
-       
+       #top-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+       }
+       li {
+           display: inline;
+           padding: 8px;
+       }
      </style>   
     </head>
 <body>
+<nav>
+    <ul id="top-nav">
+        <li>about</li>
+        <li>store</li>
+        <li style="float: right;">sign in</li>
+        <li style="float: right;" class="material-icons">apps</li>
+        <li style="float: right;">images</li>
+        <li style="float: right;">gmail</li>
+        
+        
 
+    </ul>
+</nav>
     <!-- google logo -->
    <div id="logo">
-    <a href="https://google.ca/"><img src="googlelogo_color_272x92dp.png" alt="google's logo"></a>
+    <img src="googlelogo_color_272x92dp.png" alt="google's logo">
    </div>
     
    
     <!-- search bar form-->
 <div id="form">
-    <form id="search-bar">
+        <form id="search-bar">
             <input type="text" for="search-bar" name="search-bar"><br>
             
-    </form>
+    
     <!--search and feeling lucky buttons-->
-<div id=search-lucky>
-    <button id="search">
+    <div id=search-lucky>
+        <button  id="search">
         Google Search
-    </button>
-    <button id="lucky">
+        </button>
+        <button id="lucky">
         I'm feeling lucky
-    </button>
-</div>
+        </button>
+        </form>
+    </div>
 
 </div>
    
