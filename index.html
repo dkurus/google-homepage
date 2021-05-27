@@ -6,7 +6,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet">
      <style>    
-
+        a  {
+            text-decoration: none;
+            color:rgba(38, 36, 36, 0.693)
+        }
+        a:hover {
+            color:rgba(0, 0, 0, 0.905);
+        }
+        }
         html {
            height: 100%
         }
@@ -89,21 +96,17 @@
            font-family: material-icons;
            color:rgba(38, 36, 36, 0.693)
        }
-
-       li:hover {
-        color:rgba(0, 0, 0, 0.905);
-       }
      </style>   
     </head>
 <body>
 <nav>
     <ul id="top-nav">
-        <li>About</li>
-        <li>Store</li>
-        <li style="float: right;">Sign in</li>
-        <li style="float: right;" class="material-icons" style="font-size:2px;">apps</li>
-        <li style="float: right;">Images</li>
-        <li style="float: right;">Gmail</li>
+        <li><a href="https://about.google/?fg=1&utm_source=google-CA&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+        <li><a href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Store</a></li>
+        <li style="float: right;"><a href="https://store.google.com/CA/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-CA">Sign in</a></li>
+        <li style="float: right;" class="material-icons" style="font-size:2px;"><a>apps</a></li>
+        <li style="float: right;"><a href="https://www.google.ca/imghp?hl=en&ogbl">Images</a></li>
+        <li style="float: right;"><a href="https://mail.google.com/mail/u/0/">Gmail</a></li>
         
         
 
@@ -123,9 +126,9 @@
     
     <!--search and feeling lucky buttons-->
     <div id=search-lucky>
-        <button  id="search">
+       <button  id="search">
         Google Search
-        </button>
+       </button>
         <button id="lucky">
         I'm feeling lucky
         </button>
