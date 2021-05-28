@@ -13,7 +13,6 @@
         a:hover {
             color:rgba(0, 0, 0, 0.905);
         }
-        }
         html {
            height: 100%
         }
@@ -54,15 +53,9 @@
         border-radius: 25px; 
         outline: none; 
         transition: box-shadow .4s;
-        width: 650px;
-        
-       
-        
-
-        
+        width: 600px;
        }  
-
-       input:hover
+      input:hover
        {
         box-shadow: 0 0 30px rgba(33,33,33,.2);
        } 
@@ -91,10 +84,23 @@
        }
        li {
            display: inline;
-           padding: 6px;
-           font-size: 19px;
+           padding-left: 10px;
+           padding-right: 18px;
+           font-size: 17px;
            font-family: material-icons;
            color:rgba(38, 36, 36, 0.693)
+       }
+       #bot-nav {
+           position: fixed;
+           bottom: 0;
+           width: 100%;
+           padding: 6px;
+           font-size: 9px;
+           font-family: material-icons;
+           color:rgba(38, 36, 36, 0.693);
+          
+           
+           
        }
      </style>   
     </head>
@@ -136,7 +142,17 @@
     </div>
 
 </div>
-   
+<nav>
+    <ul id="bot-nav">
+        <li><a>Advertising</a></li>
+        <li><a>Business</a></li>
+        <li><a>How Search Works</a></li>
+        <li style="float:right;"><a>Settings</a></li>
+        <li style="float:right;"><a>Terms</a></li>
+        <li style="float:right;"><a>Privacy</a></li>
+    </ul>
+</nav>
+
     
 </body>
 
